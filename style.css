@@ -5,6 +5,7 @@ html {
   background-image:  linear-gradient(30deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(150deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(30deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(150deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(60deg, #14141477 25%, transparent 25.5%, transparent 75%, #14141477 75%, #14141477), linear-gradient(60deg, #14141477 25%, transparent 25.5%, transparent 75%, #14141477 75%, #14141477);
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  background-attachment: fixed;
 }
 body {
   box-sizing: border-box;
