@@ -77,18 +77,18 @@ progress {
 /* POKEMON */
 
 #bulbasaur, #ivysaur, #venusaur {
-  background: linear-gradient(#00a3a3, #00354e);
-  /* background-color: #20767c; */
+  /* background: linear-gradient(#00a3a3, #00354e); */
+  background-color: #20767c;
 }
 
 #charmander, #charmeleon, #charizard {
-  background: linear-gradient(#c47600, #742300 );
-  /* background-color: #aa4a24; */
+  /* background: linear-gradient(#c47600, #742300 ); */
+  background-color: #aa4a24;
 }
 
 #squirtle, #wartortle, #blastoise {
-  background: linear-gradient(#0083c4, #002374 );
-  /* background-color:#3168a3; */
+  /* background: linear-gradient(#0083c4, #002374 ); */
+  background-color:#3168a3;
 }
 
 /* ANIMATION */
