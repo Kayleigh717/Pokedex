@@ -78,7 +78,13 @@ progress {
 /* TYPE COLORS */
 
 .grass {
-  background-color: #20767c;
+  /* background-color: #20767c; */
+
+/* From https://css.glass */
+background: rgba(0, 255, 200, 0.13);
+border-radius: 16px;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
 /* .grass .stat progress {
@@ -86,15 +92,30 @@ progress {
 } */
 
 .fire {
-  background-color: #aa4a24;
+  /* background-color: #aa4a24; */
+  /* From https://css.glass */
+background: rgba(255, 68, 0, 0.13);
+border-radius: 16px;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
 .water {
-  background-color:#3168a3;
+  /* background-color:#3168a3; */
+    /* From https://css.glass */
+  background: rgba(0, 140, 255, 0.13);
+border-radius: 16px;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
 .bug  {
-  background-color: #4e6e2c;
+  /* background-color: #4e6e2c; */
+    /* From https://css.glass */
+  background: rgba(195, 255, 0, 0.13);
+border-radius: 16px;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
 /* ANIMATION */
