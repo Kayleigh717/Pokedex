@@ -75,21 +75,26 @@ progress {
 }
 
 
-/* POKEMON */
+/* TYPE COLORS */
 
-#bulbasaur, #ivysaur, #venusaur {
-  /* background: linear-gradient(#00a3a3, #00354e); */
+.grass {
   background-color: #20767c;
 }
 
-#charmander, #charmeleon, #charizard {
-  /* background: linear-gradient(#c47600, #742300 ); */
+/* .grass .stat progress {
+  accent-color: #12474b;
+} */
+
+.fire {
   background-color: #aa4a24;
 }
 
-#squirtle, #wartortle, #blastoise {
-  /* background: linear-gradient(#0083c4, #002374 ); */
+.water {
   background-color:#3168a3;
+}
+
+.bug  {
+  background-color: #4e6e2c;
 }
 
 /* ANIMATION */
