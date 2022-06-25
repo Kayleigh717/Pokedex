@@ -1,0 +1,114 @@
+/* HTML */
+html {
+  background-color: #0b0b0b;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(150deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(30deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(150deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(60deg, #14141477 25%, transparent 25.5%, transparent 75%, #14141477 75%, #14141477), linear-gradient(60deg, #14141477 25%, transparent 25.5%, transparent 75%, #14141477 75%, #14141477);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+body {
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: auto auto;
+  color: white;
+  font-family: Georgia;
+  font-size: 1.1em;
+}
+h1 {
+  font-size: 3em;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+h1 {
+  text-align: center;
+}
+p {
+  font-family: verdana;
+}
+
+/* ENTRIES */
+
+
+.flex {
+  display: flex;
+  justify-content:space-evenly;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.entry {
+  max-width: 360px;
+  /* margin: auto auto; */
+  line-height: 1em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 1em;
+  animation-name: hoverout;
+  animation-duration: 0.3s;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+img:hover {
+  animation-name: hoverin;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+}
+.stat p {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+progress {
+  margin-right: 0em;
+}
+
+
+/* POKEMON */
+
+#bulbasaur, #ivysaur, #venusaur {
+  background: linear-gradient(#00a3a3, #00354e);
+  /* background-color: #20767c; */
+}
+
+#charmander, #charmeleon, #charizard {
+  background: linear-gradient(#c47600, #742300 );
+  /* background-color: #aa4a24; */
+}
+
+#squirtle, #wartortle, #blastoise {
+  background: linear-gradient(#0083c4, #002374 );
+  /* background-color:#3168a3; */
+}
+
+/* ANIMATION */
+
+@keyframes hoverout {
+  from {
+    transform: scale(1.1);
+    filter: brightness(110%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes hoverin {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    filter: brightness(110%);
+  }
+}
