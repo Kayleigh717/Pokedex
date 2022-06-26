@@ -1,4 +1,14 @@
 /* HTML */
+:root {
+  --grass: #20767c70;
+  --fire: #aa4a2470;
+  --water: #3168a370;
+  --bug: #58704170;
+  --normal: #4c575c70;
+  --flying: #829ca870;
+  --poison: #722c9d70;
+}
+
 html {
   background-color: #0b0b0b;
   opacity: 1;
@@ -10,18 +20,16 @@ html {
 body {
   box-sizing: border-box;
   max-width: 1300px;
-  margin: auto auto;
+  margin: auto;
   color: white;
   font-family: Georgia;
-  font-size: 1.1em;
+  padding: 1em;
 }
-h1 {
-  font-size: 3em;
-}
+
 h1, h2, h3 {
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 3px;
+  /* letter-spacing: 1px; */
 }
 h1 {
   text-align: center;
@@ -30,26 +38,46 @@ p {
   font-family: verdana;
 }
 
+/* NAV */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5em;
+  justify-content: center;
+  padding: 1em;
+}
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a:active, a:visited {
+  color: white;
+}
+a:hover {
+  color: rgb(109, 109, 109);
+}
 /* ENTRIES */
 
 
 .flex {
   display: flex;
-  justify-content:space-evenly;
+  /* justify-content:space-around; */
   gap: 3em;
   flex-wrap: wrap;
 }
 
 .entry {
-  max-width: 360px;
-  /* margin: auto auto; */
+  width: 350px;
+  margin: auto;
   line-height: 1em;
   padding: 1em;
   border-radius: 1em;
 }
 
 img {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: block;
   border-radius: 1em;
@@ -67,55 +95,38 @@ img:hover {
 }
 .stat p {
   display: inline-block;
-  margin-right: 1em;
-}
-
-progress {
-  margin-right: 0em;
+  margin-right: 1.5em;
 }
 
 
-/* TYPE COLORS */
+/* TYPE */
 
 .grass {
-  /* background-color: #20767c; */
-
-/* From https://css.glass */
-background: rgba(0, 255, 200, 0.13);
-border-radius: 16px;
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  background-color: var(--grass);
 }
 
-/* .grass .stat progress {
-  accent-color: #12474b;
-} */
-
 .fire {
-  /* background-color: #aa4a24; */
-  /* From https://css.glass */
-background: rgba(255, 68, 0, 0.13);
-border-radius: 16px;
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  background-color: var(--fire);
 }
 
 .water {
-  /* background-color:#3168a3; */
-    /* From https://css.glass */
-  background: rgba(0, 140, 255, 0.13);
-border-radius: 16px;
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  background-color: var(--water);
 }
 
 .bug  {
-  /* background-color: #4e6e2c; */
-    /* From https://css.glass */
-  background: rgba(195, 255, 0, 0.13);
-border-radius: 16px;
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  background-color: var(--bug);
+}
+
+.normal {
+  background-color: var(--normal);
+}
+
+.flying {
+  background-color: var(--flying);
+}
+
+.poison {
+  background-color: var(--poison);
 }
 
 /* ANIMATION */
