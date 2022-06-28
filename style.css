@@ -7,6 +7,9 @@
   --normal: #4c575c70;
   --flying: #829ca870;
   --poison: #722c9d70;
+  --electric: #b8a60070;
+  --ground: #724b0f70;
+  --fairy: #ca58b570;
 }
 
 html {
@@ -129,6 +132,17 @@ img:hover {
   background-color: var(--poison);
 }
 
+.electric {
+  background-color: var(--electric)
+}
+
+.ground {
+  background-color: var(--ground);
+}
+
+.fairy {
+  background-color: var(--fairy);
+}
 /* ANIMATION */
 
 @keyframes hoverout {
